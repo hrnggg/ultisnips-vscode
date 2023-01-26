@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from ultisnips2vscode import vim2vscode
+from src import vim2vscode
 from copy import deepcopy
 import json
 

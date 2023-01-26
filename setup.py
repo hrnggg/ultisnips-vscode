@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -13,7 +13,7 @@ setup(
     author_email="ewrietz@gmail.com",
     url="https://github.com/erietz/ultisnips-vscode",
     keywords="vim ultisnips snippets vscode json",
-    packages=['ultisnips2vscode'],
-    scripts=['scripts/ultisnips2vscode']
+    packages=find_packages(),
+    entry_points={"console_scripts": ["ultisnips2vscode = src.main:main"]},
 )
 

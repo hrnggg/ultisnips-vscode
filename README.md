@@ -1,5 +1,3 @@
-![](https://img.shields.io/pypi/v/ultisnips-vscode)
-
 # About
 
 I don't always use VSCode. But when I do, I use Ultisnips.
@@ -9,11 +7,11 @@ and convert the whole batch to json format for use in vscode.
 
 # Installation
 
-`pip install ultisnips-vscode`
+`pip install git+https://github.com/hrnggg/ultisnips-vscode.git`
 
 # Usage
 
-- Create a config file at `~/.vscode/ultisnips-vscode.json`
+- Create a config file at any directory.
 - Add the paths to your snippets folders. 
 - On a mac this file might contain:
 
@@ -34,9 +32,7 @@ and convert the whole batch to json format for use in vscode.
 }
 ```
 
-- Source your shell, or log out and log back in so the script is in your
-  `$PATH`
-- Run the command `ultisnips2vscode` to synchronize your snippets. This will
+- Run the command `ultisnips2vscode </path/to/config>` to synchronize your snippets. This will
   output something like:
 
 ``` 
